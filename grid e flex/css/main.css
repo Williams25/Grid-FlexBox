@@ -1,0 +1,214 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+    .container{
+    display: grid;
+    height: 100%;
+    grid-template-columns:auto;
+    grid-template-rows:auto auto auto auto auto auto auto auto auto auto auto auto 50px;
+    grid-template-areas:
+    "topo"
+    "menu"
+    "corpo"
+    "lateral"
+    "noticia1"
+    "parg"
+    "lateral2"
+    "noticia2"
+    "parg2"
+    "lateral3"
+    "more"
+    "lateral4"
+    "rodape"
+}
+.topo{
+    grid-area: topo;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.topo .logo img{
+    width: 380px;
+    height: 250px;
+}
+form{
+    margin-top: 100px;
+    margin-right: 20px;
+}
+.menu, li{
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.menu li, ul{
+    text-decoration: none;
+    color: black;
+    display: inline;
+    margin: 10px;
+    font-size: 25px;
+}
+.corpo{
+    grid-area: corpo;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.lateral{
+    grid-area: lateral;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+.banner img{
+    width: 350px;
+}
+.banner2 img{
+    width: 300px;
+}
+.noticia1{
+    grid-area: noticia1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.noticia2{
+    grid-area: noticia2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.parg{
+    grid-area: parg;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.parg2{
+    grid-area: parg2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.img1 img{
+    width: 150px;
+}
+.lateral2{
+    grid-area: lateral2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.lateral3{
+    grid-area: lateral3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.more{
+    grid-area: more;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.more a{
+    margin-top: 30px;
+}
+.lateral4{
+    grid-area: lateral4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.rodape{
+    grid-area: rodape;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    border: 2px solid black;
+}
+.menu li, ul a{
+    text-decoration: none;
+    color: black;
+    display: inline;
+    margin: 10px;
+    font-size: 25px;
+}
+@media (min-width:500px) {
+    .container{
+        grid-template-columns:170px auto 300px;
+        grid-template-rows: 250px 100px auto auto auto auto 50px;
+        grid-template-areas: 
+            "topo topo topo"
+            "menu menu menu"
+            "corpo corpo lateral"
+            "noticia1 parg lateral2"
+            "noticia2 parg2 lateral3"
+            "more more lateral4"
+            "rodape rodape rodape"
+    }
+    .topo .logo img{
+        width: 380px;
+        height: 250px;
+    }
+    form{
+        margin-top: 100px;
+        margin-right: 20px;
+    }
+    .menu li, ul a{
+        text-decoration: none;
+        color: black;
+        display: inline;
+        margin: 10px;
+        font-size: 25px;
+    }
+    .banner img{
+        width: 350px;
+    }
+    .banner2 img{
+        width: 300px;
+    }
+    .parg p{
+        margin-top: 90px;
+    }
+    .parg2 p{
+        margin-top: 70px;
+    }
+    .img1 img{
+        width: 150px;
+    }
+    .more a{
+        margin-top: 30px;
+    }
+   
+}
